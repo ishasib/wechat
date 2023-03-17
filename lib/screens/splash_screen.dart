@@ -1,9 +1,10 @@
 import 'package:chat_appp/home_screen.dart';
+import 'package:chat_appp/screens/auth/loginn.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter/services.dart';
 
 import '../../main.dart';
+import 'auth/loginn.dart';
 //splash screen
 
 class SplashScreen extends StatefulWidget {
@@ -23,7 +24,7 @@ class _SplashScreenState extends State<SplashScreen> {
       SystemChrome.setSystemUIOverlayStyle(
           SystemUiOverlayStyle(statusBarColor: Colors.transparent));
       Navigator.pushReplacement(
-          context, MaterialPageRoute(builder: (_) => const HomeScreen()));
+          context, MaterialPageRoute(builder: (_) => const LoginScreen()));
     });
   }
 
